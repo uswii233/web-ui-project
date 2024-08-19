@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Review</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .counter {
+            margin-bottom: 20px;
+        }
+        .thank-you {
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <input type="file" id="file-input" accept=".json">
+        <div class="counter">Reviewed: <span id="reviewed-count">0</span> / <span id="total-count">0</span></div>
+        <div id="items-container"></div>
+        <button id="submit-btn" disabled>Submit</button>
+        <div id="thank-you-message" class="thank-you" style="display: none;">Thanks, all items have been reviewed.</div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
